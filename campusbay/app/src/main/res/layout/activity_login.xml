@@ -4,17 +4,16 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="campus.example.ngondo.campusbay.Splash"
-    android:background="@drawable/bg_splash"
-    android:gravity="center">
+    tools:context="campus.example.ngondo.campusbay.Login"
+    android:background="@drawable/bg_login">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cbay"
-        android:textColor="#ffffff"
-        android:gravity="center"
-        android:textSize="50dp"
-        />
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/social"
+        android:background="@drawable/black_gradient">
+    </FrameLayout>
+
+
 
 </RelativeLayout>

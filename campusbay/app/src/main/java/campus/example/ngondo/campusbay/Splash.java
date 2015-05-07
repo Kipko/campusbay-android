@@ -8,16 +8,27 @@ import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.os.Handler;
+import com.twitter.sdk.android.Twitter;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import io.fabric.sdk.android.Fabric;
 
 
 public class Splash extends ActionBarActivity {
 
+    // Note: Your consumer key and secret should be obfuscated in your source code before shipping.
+    private static final String TWITTER_KEY = "aAK88Rb2zfgAgjavMpZRWVR7t";
+    private static final String TWITTER_SECRET = "bY1oQGOmljbX2C3E6V2miVPVhQR0cEbW4ONz4obBnkW5umQVp9";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
+        Fabric.with(this, new Twitter(authConfig));
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_splash);
 
         new Handler().postDelayed(new Runnable() {

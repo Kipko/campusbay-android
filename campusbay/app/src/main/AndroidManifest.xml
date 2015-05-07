@@ -10,7 +10,6 @@
         <activity
             android:name=".Home"
             android:label="@string/app_name" >
-
         </activity>
         <activity
             android:name=".Splash"
@@ -21,6 +20,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="e760bd6f36ab5ec4ad7aae5eb235635614801391" />
     </application>
 
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
