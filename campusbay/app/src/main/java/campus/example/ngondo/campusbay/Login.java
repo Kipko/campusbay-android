@@ -24,6 +24,7 @@ public class Login extends FragmentActivity {
         setContentView(R.layout.activity_login);
 
         //Run the fragment
+        //just to push!!
         SocialLogin social = new SocialLogin();
 
     }
