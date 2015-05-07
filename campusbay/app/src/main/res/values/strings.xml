@@ -15,4 +15,6 @@
     <string name="pas">Password</string>
     <string name="email">Email</string>
     <string name="name">Name</string>
+    <string name="sub">submit</string>
+    <string name="can">cancel</string>
 </resources>
