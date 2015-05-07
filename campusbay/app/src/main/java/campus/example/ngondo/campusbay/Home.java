@@ -5,13 +5,20 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import it.neokree.materialnavigationdrawer.MaterialNavigationDrawer;
 
-public class Home extends ActionBarActivity {
+
+public class Home extends MaterialNavigationDrawer {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        this.setDrawerHeaderImage(R.drawable.header1);
+
+        this.addSection(newSection("Main", new Main()));
+        this.addSection(newSection("Furniture", new Furniture()));
     }
 
     @Override
@@ -34,5 +41,10 @@ public class Home extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void init(Bundle bundle) {
+
     }
 }
