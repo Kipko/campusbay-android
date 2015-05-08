@@ -18,6 +18,11 @@ public class Home extends MaterialNavigationDrawer {
 
         this.addSection(newSection("Main", new Main()));
         this.addSection(newSection("Furniture", new Furniture()));
+        this.addSection(newSection("Main", new Electronics()));
+        this.addSection(newSection("Furniture", new Services()));
+        this.addSection(newSection("Main", new Fashion()));
+        this.addSection(newSection("Furniture", new Foods()));
+        this.addSection(newSection("Main", new Others()));
 
     }
 }

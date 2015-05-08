@@ -5,7 +5,7 @@
         <!-- Customize your theme here. -->
     </style>
     <style name="MyNavigationDrawerTheme" parent="MaterialNavigationDrawerTheme">
-        <item name="colorPrimary">#8bc34a</item>
+        <item name="colorPrimary">#ffffff</item>
         <item name="colorPrimaryDark">#558b2f</item>
         <item name="colorAccent">#FFFFFF</item>
     </style>
