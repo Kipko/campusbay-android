@@ -1,6 +1,7 @@
 package campus.example.ngondo.campusbay;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -9,8 +10,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 
 public class Login extends FragmentActivity {
@@ -26,6 +29,17 @@ public class Login extends FragmentActivity {
         //Run the fragment
         //just to push!!
         SocialLogin social = new SocialLogin();
+
+        Button btnsubmit = (Button) findViewById(R.id.submit);
+
+        btnsubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Login.this, Home.class);
+                startActivity(i);
+            }
+        });
+
 
     }
 }
