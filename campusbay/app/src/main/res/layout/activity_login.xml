@@ -112,7 +112,7 @@
                 android:layout_gravity="right"
                 android:text="@string/can"
                 android:background="#ffffff"
-                android:id="@+id/cancel" />
+                android:id="@+id/gotomenu" />
 
             <Button
                 android:layout_width="0dp"
